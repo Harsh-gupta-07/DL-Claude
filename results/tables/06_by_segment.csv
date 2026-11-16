@@ -1,0 +1,8 @@
+,WAPE,WAPE,WAPE,WAPE,Pinball,Pinball,Pinball,Pinball
+segment,erratic,intermittent,lumpy,smooth,erratic,intermittent,lumpy,smooth
+Seasonal naive,0.935,0.92,1.057,0.48,2.003,0.287,0.624,1.09
+LightGBM (Phase 1),0.757,0.821,0.968,0.398,1.526,0.225,0.471,0.885
+Kalman filter (Phase 1),0.739,0.801,0.951,0.377,1.584,0.235,0.51,0.87
+DeepAR (global DL),0.724,0.816,0.938,0.388,1.531,0.22,0.461,0.869
+50/50 avg Kalman+DeepAR,0.728,0.804,0.938,0.377,1.534,0.226,0.478,0.856
+KF-DeepAR hybrid,0.724,0.817,0.947,0.385,1.526,0.22,0.461,0.864

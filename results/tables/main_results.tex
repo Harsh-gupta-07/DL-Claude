@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{Rolling-origin results (3 origins, 300 SKUs, 28-day horizon; DL models mean ± std over 3 seeds).}
+\label{tab:main}
+\begin{tabular}{lccccc}
+\toprule
+ & MAE & RMSE & WAPE & Pinball & Cov80 \\
+\midrule
+Seasonal naive & 1.577 & 3.342 & 0.757 & 0.514 & 0.843 \\
+LightGBM (Phase 1) & 1.365 & 2.666 & 0.655 & 0.402 & 0.797 \\
+Kalman filter (Phase 1) & 1.325 & 2.571 & 0.636 & 0.416 & 0.870 \\
+DeepAR (global DL) & 1.336 ± 0.010 & 2.579 ± 0.027 & 0.641 ± 0.005 & 0.395 ± 0.004 & 0.913 ± 0.002 \\
+50/50 avg Kalman+DeepAR & 1.320 ± 0.005 & 2.543 ± 0.010 & 0.633 ± 0.002 & 0.400 ± 0.002 & 0.863 ± 0.000 \\
+KF-DeepAR hybrid & 1.336 ± 0.007 & 2.573 ± 0.015 & 0.641 ± 0.004 & 0.394 ± 0.001 & 0.912 ± 0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
